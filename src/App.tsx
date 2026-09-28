@@ -55,12 +55,12 @@ export default function App() {
             <Route path="/card" element={<Card />} />
 
             {/* ✅ kirim posts */}
-            <Route path="/artikel" element={<Artikel />} />
+            {/* <Route path="/artikel" element={<Artikel />} /> */}
 
-            <Route
+            {/* <Route
               path="/artikel/:slug"
               element={<DetailArtikel posts={posts} />}
-            />
+            /> */}
 
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<Policy />} />

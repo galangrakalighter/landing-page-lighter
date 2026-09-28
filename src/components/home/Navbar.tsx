@@ -145,11 +145,9 @@ const Navbar: React.FC = () => {
                 </div>
               </li>
               
-              <li><a href="/artikel" onClick={(e) => handleNavigate(e, "/artikel")}>
-              Artikel
-            </a></li>
-              <li><a href="https://berita.lightermediagroup.com/" target="_blank" className="hover:text-gray-400 transition">Berita</a></li>
-              <li><a href="#contact" className="hover:text-gray-400 transition">Kontak</a></li>
+              <li><a href="/artikel" className="hover:text-gray-400 transition">Artikel</a></li>
+              <li><a href="/berita" className="hover:text-gray-400 transition">Berita</a></li>
+              <li><a href="https://wa.me/62882002906686" className="hover:text-gray-400 transition">Kontak</a></li>
             </ul>
           </div>
           {/* <div className="flex-1 hidden md:block"></div> */}
@@ -194,8 +192,9 @@ const Navbar: React.FC = () => {
                 ))}
              </div>
           </li>
-          <li><a href="https://berita.lightermediagroup.com/" target="_blank" onClick={() => setOpen(false)}>Berita</a></li>
-          <li><a href="#contact" onClick={() => setOpen(false)}>Kontak</a></li>
+          <li><a href="/artikel" className="hover:text-gray-400 transition">Artikel</a></li>
+          <li><a href="/berita" onClick={() => setOpen(false)}>Berita</a></li>
+          <li><a href="https://wa.me/62882002906686" onClick={() => setOpen(false)}>Kontak</a></li>
           {/* <li className="pt-4 border-t border-gray-700">
              <div className="flex items-center justify-between">
                 <span>Mode Gelap</span>

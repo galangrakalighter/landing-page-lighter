@@ -66,13 +66,7 @@ const Section2 = () => {
                         {/* TEXT SECTION - Disesuaikan menjadi w-[45%] agar gambar memiliki ruang lebih besar */}
                         <div className="w-full md:w-[45%] text-left md:text-left lg:pl-8">
                             <p className="xs:mt-0 xs:text-2xl text-white text-base sm:text-3xl md:text-2xl lg:text-3xl xl:4xl leading-relaxed max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto md:mx-0 font-[Arial,Helvetica,sans-serif] textChange">
-                                Lighter Media Group adalah ekosistem media digital terintegrasi
-                                yang berbasis di Bandung. Berdiri sejak 2018, LMG berkembang
-                                dari studio kecil menjadi grup media dengan berbagai unit dan
-                                kanal digital dalam satu sistem. Kami membantu bisnis membangun
-                                dan mengembangkan kehadiran digital secara strategis. Setiap layanan
-                                dirancang untuk saling terhubung dan memberi dampak nyata bagi
-                                pertumbuhan bisnis.
+                                Lighter Media Group (LMG) adalah ekosistem media digital terintegrasi berbasis di Bandung yang berkembang sejak 2006. Berawal dari studio kecil, LMG terus berevolusi dari desain grafis, multimedia, digital marketing, hingga menjadi integrated digital media ecosystem. Kami menghadirkan berbagai layanan digital yang saling terhubung untuk membantu bisnis membangun branding, pemasaran, teknologi, dan penjualan secara strategis. Setiap layanan dirancang dalam satu ekosistem terpadu untuk menciptakan pertumbuhan bisnis dan peningkatan omset secara berkelanjutan
                             </p>
                         </div>
 
@@ -98,7 +92,7 @@ const Section2 = () => {
                         <div className="text-xl md:text-4xl lg:text-4xl text-white textChange md:ml-[4%]">
                             {/* Angka 8 menjadi Bold */}
                             <span className="font-extrabold">
-                                <Counter end={8} />
+                                <Counter end={20} />
                             </span>
                             
                             {/* Teks Huruf tidak Bold (font-normal) */}

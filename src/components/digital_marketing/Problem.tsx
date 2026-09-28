@@ -9,8 +9,8 @@ interface ProblemItem {
 const ProblemSection = () => {
   const problems: ProblemItem[] = [
     { 
-      title: "Conversion Rendah", 
-      desc: "Traffic tinggi yang masuk ke website Anda tidak terkonversi menjadi revenue riil",
+      title: "Iklan jalan tapi ga convert", 
+      desc: "Mendatangkan traffic tinggi ke website sudah menjadi langkah awal yang hebat, kini kita hanya perlu menyelaraskan corong (funnel) agar pengunjung tersebut berubah menjadi pembeli.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -18,8 +18,8 @@ const ProblemSection = () => {
       )
     },
     { 
-      title: "Iklan Burn Budget", 
-      desc: "Kampanye iklan berjalan tanpa optimasi data, menyebabkan biaya akuisisi (CAC) membengkak",
+      title: "Budget bocor ga ketahuan", 
+      desc: "Menghadapi biaya akuisisi yang membengkak di tengah algoritma dinamis memang penuh tantangan, namun fase ini sangat wajar dilalui sebelum kita mengoptimasinya berbasis data.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.99 7.99 0 0120 13a7.99 7.99 0 01-2.343 5.657z" />
@@ -28,8 +28,8 @@ const ProblemSection = () => {
       )
     },
     { 
-      title: "Blind Tracking", 
-      desc: "Tidak ada infrastruktur tracking yang jelas untuk mengukur ROI dari setiap rupiah yang dibelanjakan",
+      title: "Konten banyak, sales nol", 
+      desc: "Dedikasi Anda dalam membuat konten masif sudah luar biasa, dan tantangan penjualan ini biasanya selesai begitu arah strategi branding dihubungkan ke sistem konversi.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
@@ -37,8 +37,8 @@ const ProblemSection = () => {
       )
     },
     { 
-      title: "Growth Stagnan", 
-      desc: "Bisnis sulit melakukan scaling karena tidak memiliki arsitektur kampanye yang stabil",
+      title: "Buta data ROI kampanye", 
+      desc: "Sangat wajar jika Anda merasa kesulitan menghitung perputaran modal dari campaign yang rumit, dan hal ini bisa diurai secara transparan dengan membangun infrastruktur tracking yang rapi.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />

@@ -10,8 +10,7 @@ const HeroSection = () => {
         <div className="text-left">
           {/* Main Title - Arial Black, Tracking Normal */}
           <h1 className={`text-6xl md:text-[90px] font-black text-white leading-[0.95] mb-8 tracking-normal uppercase ${arialStack}`}>
-            LGTR – <br />
-            <span className={`text-[#F96300] ${arialStack}`}>Digital Growth</span> Engine
+            WIN THE <span className={`text-[#F96300] ${arialStack}`}>MARKET</span> FOR YOU
           </h1>
           
           {/* Description - Arial Bold */}
@@ -22,7 +21,10 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-6">
             {/* Button - Arial Black */}
             <button className={`px-10 py-5 bg-[#F96300] hover:bg-[#ff7b24] text-white font-black rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_#F96300] uppercase tracking-[0.15em] text-sm leading-none ${arialStack}`}>
-              Scale Bisnis Sekarang
+             Konsultasi Gratis
+            </button>
+            <button className={`px-10 py-5 bg-[#F96300] hover:bg-[#ff7b24] text-white font-black rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_#F96300] uppercase tracking-[0.15em] text-sm leading-none ${arialStack}`}>
+              Lihat Case Study
             </button>
           </div>
         </div>

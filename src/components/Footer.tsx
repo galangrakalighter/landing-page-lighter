@@ -1,9 +1,21 @@
 import { Heart } from "lucide-react";
 import { scroller } from "react-scroll";
 import { Element } from "react-scroll";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 const Footer = () => {
+  const clients = [
+      { name: "Branding Agency", url: "/branding"},
+      { name: "Digital Marketing Agency", url: "/digital_marketing"},
+      { name: "MCN", url: "/mcn"},
+      { name: "E-Commerce Agency", url: "/ecommerce"},
+      { name: "Tech Agency", url: "/tech"},
+      { name: "Academy", url: "/academy"},
+      { name: "Event Organizer", url: "/event_organizer"},
+      { name: "Multimedia", url: "/multimedia"},
+    ];
+
   return (
     <Element name="contact-section">
       <section id="contact" className="py-20 bg-[#161616] divChange">
@@ -11,15 +23,33 @@ const Footer = () => {
           {/* MAPS — KIRI */}
           <div className="w-full flex justify-center md:mt-[10%]">
             <div className="w-full max-w-4xl rounded-xl overflow-hidden">
-              {/* Perbesar tinggi: ubah pt-[40%] */}
               <div className="relative w-full pt-[40%] md:pt-[100%] lg:pt-[140%] rounded-xl overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.13020391034!2d107.6049541696215!3d-6.947723068308638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8933e050ea9%3A0xb7b29b67f51d0abd!2sJl.%20Soekarno-Hatta%20No.399A%2C%20Karasak%2C%20Kec.%20Astanaanyar%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040243!5e0!3m2!1sid!2sid!4v1764042896282!5m2!1sid!2sid"
-                  className="absolute top-0 left-0 w-full h-full border-0 rounded-xl"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+                
+                {/* grid-cols-2 dikunci untuk semua ukuran layar */}
+                <div className="absolute top-0 left-0 w-full h-full overflow-y-auto no-scrollbar grid grid-cols-2 gap-px bg-white/10 border border-white/10 rounded-xl shadow-2xl">
+                  
+                  {clients.map((client, index) => (
+                    <Link 
+                      key={index} 
+                      to={client.url}
+                      className="group relative bg-[#0a0a0a] p-6 md:p-12 flex flex-col items-center justify-center transition-all duration-500 hover:bg-white/[0.02] cursor-pointer text-center"
+                    >
+                      {/* Area Teks Nama Client */}
+                      <div className="relative z-10 transition-all duration-500 group-hover:scale-105">
+                        {/* Mengganti font-[Arial,...] menjadi font-['Inter',sans-serif] */}
+                        <h3 className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-gray-500 group-hover:text-white transition-colors uppercase font-['Inter',sans-serif]">
+                          {client.name}
+                        </h3>
+                      </div>
+                      
+                      {/* Efek Hover Background Glow */}
+                      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                        <div className="absolute inset-0 bg-gradient-to-b from-blue-600/[0.07] to-transparent"></div>
+                      </div>
+                    </Link>
+                  ))}
+                  
+                </div>
               </div>
             </div>
           </div>
@@ -90,8 +120,8 @@ const Footer = () => {
                     />
                   </div>
                   <span className="text-white font-bold text-lg textChange font-[Arial,Helvetica,sans-serif]">
-                    <a href="https://wa.me/628812431684" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">
-                      +628812431684
+                    <a href="https://wa.me/62882002456108" target="_blank" rel="noopener noreferrer" className="hover:text-green-400 transition-colors">
+                      +62882002456108
                     </a>
                   </span>
                 </li>

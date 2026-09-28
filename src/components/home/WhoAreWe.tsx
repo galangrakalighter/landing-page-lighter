@@ -119,7 +119,7 @@ const WhoAreWe = () => {
           <div className="text-xl md:text-4xl lg:text-4xl text-white textChange md:ml-[4%]">
               {/* Angka 8 menjadi Bold */}
               <span className="font-extrabold">
-                  <Counter end={8} />
+                  <Counter end={20} />
               </span>
               
             {/* TeksB Huruf tidak Bold (font-normal) */}

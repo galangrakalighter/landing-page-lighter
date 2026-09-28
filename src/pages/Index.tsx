@@ -1,4 +1,4 @@
-import Home from "@/components/Home";
+import Home from "@/components/home/Home";
 import WhyDigital from "@/components/home/WhyDigital";
 import WhoAreWe from "@/components/home/WhoAreWe";
 import Jelajah from "@/components/home/Jelajah";

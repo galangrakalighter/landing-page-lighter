@@ -1,7 +1,10 @@
+import WordPressSidebarWidget from "@/components/artikel/Widget";
 export default function Sidebar() {
   return (
     <aside>
       <div className="sticky top-28 space-y-8">
+
+        <WordPressSidebarWidget />
 
         {/* ADS */}
         <div className="w-full aspect-square bg-[#0f1115] border border-white/10 flex items-center justify-center relative rounded-xl overflow-hidden">

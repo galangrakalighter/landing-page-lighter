@@ -13,17 +13,22 @@ import Footer from "@/components/Footer";
 import Client from "@/components/home/Client";
 import Navbar from "@/components/home/Navbar";
 import Maps from "@/components/Maps";
+import TrustBar from "@/components/digital_marketing/Trust";
 import React, { useState } from "react";
-
+import SuitabilitySection from "@/components/digital_marketing/Suitabilyty";
+import DeliverablesSection from "@/components/digital_marketing/Deliverable";
 const DigitalMarketing: React.FC = () => {
   return (
     <main className="min-h-screen">
       <Navbar />
       <HeroSection />
+      <TrustBar />
       <ProblemSection />
       <AboutLGTRSection />
+      <SuitabilitySection />
       <SolutionSection />
       <ServicesScopeSection />
+      <DeliverablesSection />
       <StrategySection />
       <ProcessSection />
       {/* <PortfolioSection /> */}
